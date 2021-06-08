@@ -14,7 +14,7 @@ body {
 .nav-bar {
     width: 100%;
     display: inline-block;
-    background-color: #1C539F;
+    background-color: #00611a;
     font-family: "Roboto", serif;
     font-weight: 700 !important;
     padding-top: 10px;
@@ -50,7 +50,8 @@ body {
 }
 
 .profile {
-    background-color: #1d539f !important;
+    background-color: #00611a;
+    background: linear-gradient(-70deg, #00611a 30%, #613d00 30%), url('./static/img/safari.jpg');
     text-align: center;
     height: 320px;
     margin-bottom: 50px;
@@ -80,7 +81,7 @@ body {
 .banner {
     padding: 20px 0px 50px 0px;
     height: 150px;
-    background-color: #1d539f;
+    /*background-color: #00611a;*/
 }
 
 .banner .logo {
