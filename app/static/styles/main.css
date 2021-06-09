@@ -1,21 +1,28 @@
-p, h1, h2, h3, h4, h5, h6, button {
-    font-family: "Roboto", serif;
+:root {
+    --gray1: #666A86;
+    --gray2: #D7DAE5;
+    --yellow: #EEC170;
+    --green1: #62A87C;
+    --green2: #254D32;
 }
 
 body {
-    background-color: #f5f5f9;
+    font-family: "Roboto", serif;
+    background-color: var(--gray2);
     background-size: cover;
     width: auto; 
     overflow-x: hidden;
-    font-family: "Roboto", serif;
     margin: 0px;
+}
+
+nav {
+    background-color: var(--green2);
 }
 
 .nav-bar {
     width: 100%;
     display: inline-block;
-    background-color: #00611a;
-    font-family: "Roboto", serif;
+    background-color: var(--green2);
     font-weight: 700 !important;
     padding-top: 10px;
 }
@@ -50,8 +57,6 @@ body {
 }
 
 .profile {
-    background-color: #00611a;
-    background: linear-gradient(-70deg, #00611a 30%, #613d00 30%), url('./static/img/safari.jpg');
     text-align: center;
     height: 320px;
     margin-bottom: 50px;
@@ -81,7 +86,6 @@ body {
 .banner {
     padding: 20px 0px 50px 0px;
     height: 150px;
-    /*background-color: #00611a;*/
 }
 
 .banner .logo {
