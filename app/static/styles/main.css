@@ -15,37 +15,44 @@ body {
     margin: 0px;
 }
 
-nav {
-    background-color: var(--green2);
+#logo {
+    display: block;
+    width: 300px;
+    margin: auto;
+    position: relative;
+    top: 20px;
 }
 
-.nav-bar {
+#bg {
+    position: relative;
+    top: 250px;
+    width: 100%;
+    float: down;
+}
+
+nav {
+    background-color: #b5e9ff;
     width: 100%;
     display: inline-block;
-    background-color: var(--green2);
     font-weight: 700 !important;
     padding-top: 10px;
 }
 
-.nav-content .logo-touch-target {
-    display: inline-flex;
-    height: 60%;
-    width: 350px;
+img {
+    /*display: none;*/
 }
+
+/* .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+
 
 .nav-content .nav-logo {
     height: 60px;
     margin: auto;
-}
-
-.nav-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.nav-logo img {
-    width: 200px;
 }
 
 .nav-content nav {
@@ -99,4 +106,4 @@ nav {
     color: white;
     font-size: 50px;
     font-weight: 700;
-}
+}*/
