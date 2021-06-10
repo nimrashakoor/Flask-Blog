@@ -19,3 +19,11 @@ def projects():
     images = []
     images.append('/static/img/safari_tree.jpg')
     return render_template('projects.html', projs=projects, imgs=images, url=os.getenv("URL"))
+
+@app.route('/blog/')
+def blog():
+    return render_template('blog.html', title="Blog")
+
+@app.route('/contact/')
+def contact():
+    return render_template('contact.html', title="Contact")

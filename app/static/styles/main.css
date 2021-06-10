@@ -1,44 +1,77 @@
-p, h1, h2, h3, h4, h5, h6, button {
-    font-family: "Roboto", serif;
+:root {
+    --gray1: #666A86;
+    --gray2: #D7DAE5;
+    --yellow: #EEC170;
+    --green1: #62A87C;
+    --green2: #254D32;
 }
 
 body {
-    background-color: #f5f5f9;
+    font-family: "Roboto", serif;
+    background-color: var(--gray2);
     background-size: cover;
     width: auto;
     overflow-x: hidden;
-    font-family: "Roboto", serif;
     margin: 0px;
 }
 
-.nav-bar {
+#logo {
+    display: block;
+    width: 300px;
+    margin: auto;
+    position: relative;
+    top: 20px;
+}
+
+#bg {
+    position: relative;
+    top: 250px;
+    width: 100%;
+}
+
+nav {
+    background-color: #b5e9ff;
     width: 100%;
     display: inline-block;
-    background-color: #1C539F;
-    font-family: "Roboto", serif;
     font-weight: 700 !important;
     padding-top: 10px;
 }
 
-.nav-content .logo-touch-target {
-    display: inline-flex;
-    height: 60%;
-    width: 350px;
+nav ul {
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
+
+nav ul li {
+    display: inline;
+    float: left;
+}
+
+nav li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: var(--green1);
+    color: var(--gray2);
+}
+
+nav a:hover {
+    background-color: var(--green2);
+}
+
+/* .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+
 
 .nav-content .nav-logo {
     height: 60px;
     margin: auto;
-}
-
-.nav-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.nav-logo img {
-    width: 200px;
 }
 
 .nav-content nav {
@@ -50,7 +83,6 @@ body {
 }
 
 .profile {
-    background-color: #1d539f !important;
     text-align: center;
     height: 320px;
     margin-bottom: 50px;
@@ -80,7 +112,7 @@ body {
 .banner {
     padding: 20px 0px 50px 0px;
     height: 150px;
-    background-color: #D7DAE5;
+
 }
 
 .banner .logo {
@@ -94,47 +126,4 @@ body {
     color: white;
     font-size: 50px;
     font-weight: 700;
-}
-
-@keyframes moving_blocks {
-      from {margin-left: -50px;}
-      to {margin-left: 300px;}
-}
-
-.project {
-      height: 250px;
-      width: 66%;
-      margin-left: 300px;
-      margin-bottom: 20px;
-      background-color:#D7DAE5;
-      text-align: left;
-      border: 10px solid;
-      border-color: #62A87C;
-      border-radius: 20px;
-      overflow: hidden;
-      animation-name: moving_blocks;
-      animation-duration: 1s;
-}
-
-.project h1 {
-      font-size: 50px;
-      font-weight: 700;
-      color: #254D32;
-      margin-left: 20px;
-      margin-bottom: 0px;
-}
-
-.project h2 {
-      font-size: 20px;
-      font-weight: 500;
-      color: white;
-      margin-left: 20px;
-      margin-top: 0px;
-}
-
-.project h3 {
-      font-size: 20px;
-      font-weight: 500;
-      color: black;
-      margin-left: 20px;
-}
+}*/

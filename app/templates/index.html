@@ -20,21 +20,27 @@
 </head>
 
 <body>
-    <header class="nav-bar">
-        <div class="nav-content">
-            <a href="/">
-                <div class="nav-logo">
-                    <img src="./static/img/logo.svg" />
-                </div>
-            </a>
-        </div>
-    </header>
+    <nav>
+        <a href="/" class="logo">
+            <img id="logo" src="./static/img/logo.svg" />
+        </a>
 
-    <div class="profile">
-        <div id="profile-picture" class="profile-picture">
-            <img src="./static/img/logo.jpg">
-        </div>
-        <h1>{{ title }}</h1>
-    </div>
+        <img src="./static/img/header.png" id="bg" />
+
+        <ul>
+            <li><a href="/">About</a></li>
+            <li><a href="/projects/">Projects</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/contact/">Contact</a></li>
+        </ul>
+
+        <!-- <div class="profile">
+            <div id="profile-picture" class="profile-picture">
+                <img src="./static/img/rhino.png">
+            </div>
+            <h1>{{ title }}</h1>
+        </div> -->
+    </nav>
 </body>
+
 </html>
