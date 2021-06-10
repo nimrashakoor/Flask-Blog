@@ -10,7 +10,7 @@ body {
     font-family: "Roboto", serif;
     background-color: var(--gray2);
     background-size: cover;
-    width: auto; 
+    width: auto;
     overflow-x: hidden;
     margin: 0px;
 }
@@ -100,7 +100,7 @@ nav a:hover {
         max-height: 100%;
         margin-left: auto;
         margin-right: auto;
-        display: block;        
+        display: block;
         padding: 20px;
 }
 
@@ -112,6 +112,7 @@ nav a:hover {
 .banner {
     padding: 20px 0px 50px 0px;
     height: 150px;
+
 }
 
 .banner .logo {
