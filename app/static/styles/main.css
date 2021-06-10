@@ -27,7 +27,6 @@ body {
     position: relative;
     top: 250px;
     width: 100%;
-    float: down;
 }
 
 nav {
@@ -38,8 +37,30 @@ nav {
     padding-top: 10px;
 }
 
-img {
-    /*display: none;*/
+nav ul {
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    float: left;
+}
+
+nav li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav a {
+    background-color: var(--green1);
+}
+
+nav a:hover {
+    background-color: var(--green2);
 }
 
 /* .logo {
