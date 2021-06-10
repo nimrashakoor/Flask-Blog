@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<link lang='sass' rel="stylesheet" href="./static/styles/main.css">
+
+<body>
+    {% for proj in projs %}
+    <div class="project">
+        <h1>{{proj['name']}}</h1>
+        <h2>{{proj['date']}}</h2>
+        {% for x in proj['descrip'] %}
+          <h3><li>{{x}}</li></h3>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</body>

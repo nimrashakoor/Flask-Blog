@@ -5,7 +5,7 @@ p, h1, h2, h3, h4, h5, h6, button {
 body {
     background-color: #f5f5f9;
     background-size: cover;
-    width: auto; 
+    width: auto;
     overflow-x: hidden;
     font-family: "Roboto", serif;
     margin: 0px;
@@ -68,7 +68,7 @@ body {
         max-height: 100%;
         margin-left: auto;
         margin-right: auto;
-        display: block;        
+        display: block;
         padding: 20px;
 }
 
@@ -80,7 +80,7 @@ body {
 .banner {
     padding: 20px 0px 50px 0px;
     height: 150px;
-    background-color: #1d539f;
+    background-color: #D7DAE5;
 }
 
 .banner .logo {
@@ -94,4 +94,47 @@ body {
     color: white;
     font-size: 50px;
     font-weight: 700;
+}
+
+@keyframes moving_blocks {
+      from {margin-left: -50px;}
+      to {margin-left: 300px;}
+}
+
+.project {
+      height: 250px;
+      width: 66%;
+      margin-left: 300px;
+      margin-bottom: 20px;
+      background-color:#D7DAE5;
+      text-align: left;
+      border: 10px solid;
+      border-color: #62A87C;
+      border-radius: 20px;
+      overflow: hidden;
+      animation-name: moving_blocks;
+      animation-duration: 1s;
+}
+
+.project h1 {
+      font-size: 50px;
+      font-weight: 700;
+      color: #254D32;
+      margin-left: 20px;
+      margin-bottom: 0px;
+}
+
+.project h2 {
+      font-size: 20px;
+      font-weight: 500;
+      color: white;
+      margin-left: 20px;
+      margin-top: 0px;
+}
+
+.project h3 {
+      font-size: 20px;
+      font-weight: 500;
+      color: black;
+      margin-left: 20px;
 }
