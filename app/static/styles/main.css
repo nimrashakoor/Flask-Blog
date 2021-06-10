@@ -53,10 +53,8 @@ nav li a {
     display: block;
     padding: 10px;
     text-decoration: none;
-}
-
-nav a {
     background-color: var(--green1);
+    color: var(--gray2);
 }
 
 nav a:hover {
