@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, send_from_directory
+from flask import Flask, render_template, send_from_directory, request
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -26,8 +26,31 @@ def projects():
 
 @app.route('/blog')
 def blog():
-    return render_template('blog.html', title="Blog")
+    posts = []
+    posts.append({'name':'A Great Day', 'date':'00/00/0000',
+    'descrip': 'Today, I met an oxpecker at the watering hole. We do not have much in common, and yet, somehow, we \
+    work so well together. Here is a picture of us!', 'img':['/static/img/oxpecker.jpg', 'Rhino and Oxpecker']})
+    posts.append({'name':'Perissodactyls', 'date':'00/00/0000',
+    'descrip': 'I was looking up my ancestry today and discovered I am related to perissodactyls, and so are horses and zebras. \
+    I wonder if there are any apps out there that track lineage? I am sure others would like to know where they came from too!',
+    'img':['/static/img/perissodactyls.jpg', 'Perissodactyls']})
+    posts.append({'name':'Welcome to our Blog!', 'date':'06/11/2021',
+    'descrip': 'We are so glad that you took the chance to read our blog! It was made using Flask, HTML, and CSS. \
+    Let us know on the Contact page if you have any suggestions for improvements! We look forward to hearing from you.',
+    'img':['/static/img/rhino_image.jpg', 'Rhino']})
+    return render_template('blog.html', posts=posts, url=os.getenv("URL"))
 
-@app.route('/contact')
+@app.route("/contact", methods=['GET', 'POST'])
 def contact():
-    return render_template('contact.html', title="Contact")
+    if request.method == "POST":
+        name = request.form.get('name')
+        email = request.form.get('email')
+        phone = request.form.get('phone')
+        message = request.form.get('message')
+
+        msg = Message(
+            subject=f"Mail from {name}", body=f"Name: {name}\nE-Mail: {email}\nPhone: {phone}\n\n\n{message}", sender=mail_username, recipients=['rahimaadnan2@gmail.com'])
+        mail.send(msg)
+        return render_template("contact.html", success=True)
+
+    return render_template("contact.html")
