@@ -11,3 +11,6 @@ Projects Feature Page,
 About Page,
 Blog, and 
 Contact Page
+
+# Langauges 
+This project was priamrly written in Python(Flask), HTML, and CSS. With a great focus on Flask. 
