@@ -12,15 +12,15 @@
     {% for proj in projs %}
     <div class='group'>
         <div class='picture'>
-            <img src= {{proj['img'][0]}} alt={{proj['img'][1]}} style= "float: left;">
+            <img src={{proj['img'][0]}} alt={{proj['img'][1]}} style="float: left;">
         </div>
         <div class='project'>
             <h2>{{proj['name']}}</h2>
             <h3>{{proj['date']}} | <a href={{proj['link']}}>GitHub</a> </h3>
             <ul>
-            {% for x in proj['descrip'] %}
-              <li>{{x}}</li>
-            {% endfor %}
+                {% for x in proj['descrip'] %}
+                <li>{{x}}</li>
+                {% endfor %}
             </ul>
         </div>
     </div>
