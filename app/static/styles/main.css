@@ -25,6 +25,20 @@ body {
     top: 20px;
 }
 
+@keyframes fadeStars {
+    from {opacity: 1.0;}
+    to {opacity: 0.0;}
+}
+
+#stars {
+    position: relative;
+    top: -60px;
+    width: 100%;
+    animation-name: fadeStars;
+    animation-duration: 4s;
+    opacity: 0.0;
+}
+
 @keyframes wind {
     from {left: -16%}
     to {left: 100%}
@@ -52,20 +66,20 @@ body {
 
 #bg {
     position: relative;
-    top: 250px;
+    top: -100px;
     width: 100%;
 }
 
 @keyframes sunrise {
     0% {background-color: var(--dark-blue);}
-    50% {background-color: var(--dark-blue);}
+    5% {background-color: var(--dark-blue);}
     100% {background-color: var(--light-blue);}
 }
 
 nav {
-    background-color: #b5e9ff;
+    background-color: var(--light-blue);
     animation-name: sunrise;
-    animation-duration: 2s;
+    animation-duration: 1s;
     width: 100%;
     display: inline-block;
     font-weight: 700 !important;
