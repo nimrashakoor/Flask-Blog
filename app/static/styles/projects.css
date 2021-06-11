@@ -12,31 +12,31 @@ body h1 {
     color: white;
     width: 30%;
     margin:0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
 }
 
 .project {
-      /* height: 50%;*/
       height: auto;
       display: inline-block;
       width: 65%;
       top: 0px;
-      /* margin-left: 2.5%; */
       margin-bottom: 2.5%;
       background-color:#D7DAE5;
       text-align: left;
       border: 10px solid;
       border-color: #62A87C;
       border-radius: 20px;
+      vertical-align: middle;
 }
 
 .project h2 {
       font-size: 50px;
       font-weight: 700;
       color: #254D32;
-      margin-left: 20px;
       margin-bottom: 0px;
+      margin-left: 20px;
+      margin-right: 20px;
 }
 
 .project h3 {
@@ -65,6 +65,7 @@ body h1 {
 .picture img {
       margin-left: 2.5%;
       margin-right: 2.5%;
+      margin-top: 10px;
       height: auto;
       width: 22.5%;
       overflow: hidden;
@@ -72,21 +73,25 @@ body h1 {
       animation-duration: 1s;
       border: 1px solid;
       border-color: #EEC170;
+      vertical-align: middle;
 }
 
 .group {
       width: 100%;
+      vertical-align: middle;
 }
 
 nav {
     background-color: #666A86;
     width: 100%;
     display: inline-block;
+    font-size: 20px;
     font-weight: 700 !important;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 nav ul {
+    display: inline-block;
     position: relative;
     list-style-type: none;
     margin: 0;
@@ -101,7 +106,6 @@ nav ul li {
 nav li a {
     display: block;
     padding: 10px;
-    text-decoration: none;
     background-color: var(--green1);
     color: white;
     text-decoration: underline;

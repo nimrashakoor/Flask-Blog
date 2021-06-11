@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<link lang='sass' rel="stylesheet" href="./static/styles/blog.css">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +11,23 @@
 </head>
 
 <body>
-    <h1>Blog</h1>
+    <h1> Blog </h1>
+    {% for post in posts%}
+        <div class='project'>
+            <h2>{{post['name']}}</h2>
+            <h3>{{post['date']}}</h3>
+            <img src= {{post['img'][0]}} alt={{post['img'][1]}} style= "float: left;">
+        <div class='text'>
+            {{post['descrip']}}
+        </div>
+        </div>
+    {% endfor %}
+    <nav>
+        <ul>
+            <li><a href="/">About</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
 </body>
-
-</html>
