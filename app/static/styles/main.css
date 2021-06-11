@@ -4,6 +4,10 @@
     --yellow: #EEC170;
     --green1: #62A87C;
     --green2: #254D32;
+    --green3: #e4f7e9;
+    --dark-blue: #003759;
+    --dark-blue: #00244d;
+    --light-blue: #b5e9ff;
 }
 
 body {
@@ -19,22 +23,83 @@ body {
     display: block;
     width: 300px;
     margin: auto;
+    margin-top: 10px;
     position: relative;
     top: 20px;
 }
 
+@keyframes fadeStars {
+    from {opacity: 1.0;}
+    to {opacity: 0.0;}
+}
+
+#stars {
+    position: relative;
+    top: -60px;
+    width: 100%;
+    animation-name: fadeStars;
+    animation-duration: 4s;
+    opacity: 0.0;
+}
+
+@keyframes wind {
+    from {left: -16%}
+    to {left: 100%}
+}
+
+.cloud {
+    position: absolute;
+    display: inline;
+    width: 200px;
+    animation-name: wind;
+    animation-duration: 130s;
+    animation-iteration-count: infinite;
+}
+
+#cloud1 {
+    top: 150px;
+}
+
+#cloud2 {
+    top: 200px;
+    animation-delay: 40s;
+    position: absolute;
+    left: -200px;
+}
+
+@keyframes lightGround {
+    from {filter: brightness(30%);}
+    to {filter: brightness(100%);}
+}
+
 #bg {
     position: relative;
-    top: 250px;
+    top: -170px;
     width: 100%;
+    animation-name: lightGround;
+    animation-duration: 3s;
+    margin: 0;
+}
+
+@keyframes sunrise {
+    0% {background-color: var(--dark-blue);}
+    40% {background-color: var(--dark-blue);}
+    100% {background-color: var(--light-blue);}
 }
 
 nav {
-    background-color: #b5e9ff;
+    background-color: var(--light-blue);
+    animation-name: sunrise;
+    animation-duration: 3s;
     width: 100%;
     display: inline-block;
     font-weight: 700 !important;
-    padding-top: 10px;
+    padding-bottom: 0;
+    padding: 0;
+}
+
+nav img {
+    display: block;
 }
 
 nav ul {
@@ -42,11 +107,14 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 nav ul li {
     display: inline;
     float: left;
+    width: 25%;
+    text-align: center;
 }
 
 nav li a {
@@ -59,6 +127,72 @@ nav li a {
 
 nav a:hover {
     background-color: var(--green2);
+}
+
+#mlh {
+    text-align: center;
+    padding: 10%;
+}
+
+#team {
+    position: relative;
+    text-align: center;
+    background-color: var(--yellow);
+    transform: rotate(2deg);
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width: 110%;
+    top: -5%;
+    left: -5%;
+}
+
+#teamRotate {
+    display: block;
+    transform: rotate(-2deg);
+}
+
+.card {
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.profile {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: var(--green1);
+    overflow: hidden;
+}
+
+#nimra img {
+    height: 280px;
+    position: relative;
+    left: -20px;
+}
+
+#jocelyn img {
+    height: 300px;
+    position: relative;
+    left: 10px;
+}
+
+.profile img {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.card h2 {
+    margin: 5%;
+}
+
+.card p {
+    margin: 1%;
+    color: gray;
 }
 
 /* .logo {
