@@ -3,78 +3,7 @@ p, h1, h2, h3, h4, h5, h6, button {
 }
 
 body {
-    background-color: #f5f5f9;
-    background-size: cover;
-    width: auto;
-    overflow-x: hidden;
-    font-family: "Roboto", serif;
-    margin: 0px;
-}
-
-.nav-bar {
-    width: 100%;
-    display: inline-block;
-    background-color: #1C539F;
-    font-family: "Roboto", serif;
-    font-weight: 700 !important;
-    padding-top: 10px;
-}
-
-.nav-content .logo-touch-target {
-    display: inline-flex;
-    height: 60%;
-    width: 350px;
-}
-
-.nav-content .nav-logo {
-    height: 60px;
-    margin: auto;
-}
-
-.nav-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.nav-logo img {
-    width: 200px;
-}
-
-.nav-content nav {
-    display: block;
-    width: 100%;
-    text-align: right;
-    padding-top: 0px;
-    padding-right: 0px;
-}
-
-.profile {
-    background-color: #1d539f !important;
-    text-align: center;
-    height: 320px;
-    margin-bottom: 50px;
-}
-
-.profile h1 {
-        font-size: 50px;
-        font-weight: 700;
-        color: white;
-}
-
-.profile img {
-        border-radius: 50%;
-        max-width: 100%;
-        max-height: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        padding: 20px;
-}
-
-.profile .profile-picture {
-    margin-bottom: 30px;
-    height: 200px;
+  background-color: #666A86
 }
 
 .banner {
@@ -96,24 +25,17 @@ body {
     font-weight: 700;
 }
 
-@keyframes moving_blocks {
-      from {margin-left: -50px;}
-      to {margin-left: 300px;}
-}
-
 .project {
-      height: 250px;
+      height: 350px;
+      display: inline-block;
       width: 66%;
-      margin-left: 300px;
+      top: 0px;
       margin-bottom: 20px;
       background-color:#D7DAE5;
       text-align: left;
       border: 10px solid;
       border-color: #62A87C;
       border-radius: 20px;
-      overflow: hidden;
-      animation-name: moving_blocks;
-      animation-duration: 1s;
 }
 
 .project h1 {
@@ -139,6 +61,24 @@ body {
       margin-left: 20px;
 }
 
-.image {
-  
+@keyframes moving_blocks {
+      from {margin-left: -50px;}
+      to {margin-left: 20px;}
+}
+
+.picture img {
+      margin-left: 20px;
+      margin-right: 20px;
+      border-radius: 10px;
+      padding: 10px;
+      height: 350px;
+      width: 350px;
+      border:1px solid black
+      overflow: hidden;
+      animation-name: moving_blocks;
+      animation-duration: 1s;
+}
+
+.group {
+      width: 100%;
 }
