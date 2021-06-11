@@ -5,6 +5,7 @@
     --green1: #62A87C;
     --green2: #254D32;
     --dark-blue: #003759;
+    --dark-blue: #00244d;
     --light-blue: #b5e9ff;
 }
 
@@ -49,7 +50,7 @@ body {
     display: inline;
     width: 200px;
     animation-name: wind;
-    animation-duration: 150s;
+    animation-duration: 130s;
     animation-iteration-count: infinite;
 }
 
@@ -64,22 +65,29 @@ body {
     left: -200px;
 }
 
+@keyframes lightGround {
+    from {filter: brightness(30%);}
+    to {filter: brightness(100%);}
+}
+
 #bg {
     position: relative;
-    top: -100px;
+    top: -170px;
     width: 100%;
+    animation-name: lightGround;
+    animation-duration: 3s;
 }
 
 @keyframes sunrise {
     0% {background-color: var(--dark-blue);}
-    5% {background-color: var(--dark-blue);}
+    20% {background-color: var(--dark-blue);}
     100% {background-color: var(--light-blue);}
 }
 
 nav {
     background-color: var(--light-blue);
     animation-name: sunrise;
-    animation-duration: 1s;
+    animation-duration: 2s;
     width: 100%;
     display: inline-block;
     font-weight: 700 !important;
