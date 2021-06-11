@@ -17,12 +17,13 @@ body h1 {
 }
 
 .project {
-      height: 350px;
+      /* height: 50%;*/
+      height: auto;
       display: inline-block;
       width: 65%;
       top: 0px;
-      margin-left: 20px;
-      margin-bottom: 20px;
+      /* margin-left: 2.5%; */
+      margin-bottom: 2.5%;
       background-color:#D7DAE5;
       text-align: left;
       border: 10px solid;
@@ -58,20 +59,19 @@ body h1 {
 
 @keyframes moving_blocks {
       from {margin-left: -50px;}
-      to {margin-left: 20px;}
+      to {margin-left: 2.5%;}
 }
 
 .picture img {
-      margin-left: 20px;
-      margin-right: 20px;
-      border-radius: 10px;
-      padding: 10px;
-      height: 350px;
-      width: 350px;
-      border:1px solid black
+      margin-left: 2.5%;
+      margin-right: 2.5%;
+      height: auto;
+      width: 22.5%;
       overflow: hidden;
       animation-name: moving_blocks;
       animation-duration: 1s;
+      border: 1px solid;
+      border-color: #EEC170;
 }
 
 .group {
