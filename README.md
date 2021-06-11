@@ -12,5 +12,5 @@ About Page,
 Blog, and 
 Contact Page
 
-# Langauges 
-This project was priamrly written in Python(Flask), HTML, and CSS. With a great focus on Flask. 
+# Languages 
+This project was primarily written in Python (Flask), HTML, and CSS, with a great focus on Flask. 
