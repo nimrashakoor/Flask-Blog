@@ -4,6 +4,8 @@
     --yellow: #EEC170;
     --green1: #62A87C;
     --green2: #254D32;
+    --dark-blue: #003759;
+    --light-blue: #b5e9ff;
 }
 
 body {
@@ -23,14 +25,47 @@ body {
     top: 20px;
 }
 
+@keyframes wind {
+    from {left: -16%}
+    to {left: 100%}
+}
+
+.cloud {
+    position: absolute;
+    display: inline;
+    width: 200px;
+    animation-name: wind;
+    animation-duration: 150s;
+    animation-iteration-count: infinite;
+}
+
+#cloud1 {
+    top: 150px;
+}
+
+#cloud2 {
+    top: 200px;
+    animation-delay: 40s;
+    position: absolute;
+    left: -200px;
+}
+
 #bg {
     position: relative;
     top: 250px;
     width: 100%;
 }
 
+@keyframes sunrise {
+    0% {background-color: var(--dark-blue);}
+    50% {background-color: var(--dark-blue);}
+    100% {background-color: var(--light-blue);}
+}
+
 nav {
     background-color: #b5e9ff;
+    animation-name: sunrise;
+    animation-duration: 2s;
     width: 100%;
     display: inline-block;
     font-weight: 700 !important;
