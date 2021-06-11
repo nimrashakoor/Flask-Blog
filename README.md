@@ -4,9 +4,9 @@
 A safari-themed blog template where you can show off your projects and blog posts!
 
 # Features 
-About Page - information at MLH Fellowship and an overview of the team that created this template
+About Page - information about the MLH Fellowship and an overview of the team that created this template
 
-Projects Page - card view of projects; contains fake projects now but will be updated as MLH Fellows complete things!
+Projects Page - card view of projects; contains Recursive Rhino's projects now but will be updated as MLH Fellows complete things!
 
 Blog Page - a page to post updates on the MLH fellowship
 
