@@ -3,11 +3,11 @@ Minimal Flask template for our blog application for MLH Fellowship Production En
  
 # Authors
 Jocelyn Heckenkamp,
-Nimra Shakoor,and
+Nimra Shakoor, &
 Rahima Adnan 
 
 # Features 
 Projects Feature Page, 
 About Page,
-Blog,and 
+Blog, and 
 Contact Page
