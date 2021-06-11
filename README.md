@@ -19,7 +19,7 @@ Flask - 2.0.1
 
 Python can be downloaded [here](https://www.python.org/downloads/).
 
-To install Flask, we recommend using pip, which is automatically installed with any of the python versions above. Install Flask with
+To install Flask, we recommend using pip, which is automatically installed with any of the python versions above. Install Flask with:
 
 ```pip install Flask```
 
@@ -35,7 +35,7 @@ Restart the terminal before running the following command:
 ```flask run```
 
 # Authors
-This template was created by Team 1 of pod 3.3.2 ("Recursive Rhinos") in the MLH Production Fellowship in summer 2021. 
+This template was created by Team 1 of pod 3.3.2 ("Recursive Rhinos") in the MLH Production Fellowship in Summer 2021. 
 
 Rahima Adnan 
 
@@ -46,4 +46,4 @@ Jocelyn Heckenkamp
 ![image](https://user-images.githubusercontent.com/34562020/121755901-02980600-cade-11eb-8779-4aedfc51fe5d.png)
 
 # Technologies
-This project was written in HTML and CSS, and it uses a python Flask server.
+This project was written in HTML and CSS, and it uses a Python Flask server.
