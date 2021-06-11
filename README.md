@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/34562020/121756615-5b689e00-cae0-11eb-8618-3f2268d37ed6.png)
+
 # Safari Flask Blog
 A safari-themed blog template where you can show off your projects and blog posts!
 
@@ -16,7 +18,11 @@ To install Flask, we recommend using pip, which is automatically installed with 
 ```pip install Flask```
 
 # Run
-Flask requires minimal WIP
+Flask requires some setup in order to run this project. After cloning this repo, run the following commands in the highest-level project folder:
+```export FLASK_ENV=development```
+```export FLASK_APP=__init__.py```
+Restart the terminal before running the following command:
+```flask run```
 
 # Authors
 This template was created by Team 1 of pod 3.3.2 ("Recursive Rhinos") in the MLH Production Fellowship in summer 2021. 
@@ -28,4 +34,4 @@ Jocelyn Heckenkamp
 ![image](https://user-images.githubusercontent.com/34562020/121755901-02980600-cade-11eb-8779-4aedfc51fe5d.png)
 
 # Technologies
-This project was primarily written in HTML and CSS, and it uses a python Flask server.
+This project was written in HTML and CSS, and it uses a python Flask server.
