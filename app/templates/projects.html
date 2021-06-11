@@ -3,19 +3,34 @@
 
 <link lang='sass' rel="stylesheet" href="./static/styles/projects.css">
 
+<head>
+    <title> Projects </title>
+</head>
+
 <body>
+    <h1> Projects </h1>
     {% for proj in projs %}
     <div class='group'>
         <div class='picture'>
-            <img src= {{proj['img'][0]}} alt={{proj['img'][1]}} style="float: left;">
+            <img src= {{proj['img'][0]}} alt={{proj['img'][1]}} style= "float: left;">
         </div>
         <div class='project'>
-            <h1>{{proj['name']}}</h1>
-            <h2>{{proj['date']}} | github </h2>
+            <h2>{{proj['name']}}</h2>
+            <h3>{{proj['date']}} | <a href={{proj['link']}}>GitHub</a> </h3>
+            <ul>
             {% for x in proj['descrip'] %}
-              <h3><li>{{x}}</li></h3>
+              <li>{{x}}</li>
             {% endfor %}
+            </ul>
         </div>
     </div>
     {% endfor %}
+    <nav>
+        <ul>
+            <li><a href="/">About</a></li>
+            <li><a href="/projects/">Projects</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/contact/">Contact</a></li>
+        </ul>
+    </nav>
 </body>
