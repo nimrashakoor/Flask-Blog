@@ -40,7 +40,7 @@ def blog():
     'img':['/static/img/rhino_image.jpg', 'Rhino']})
     return render_template('blog.html', posts=posts, url=os.getenv("URL"))
 
-@app.route("/contact", , methods=['GET', 'POST'])
+@app.route("/contact", methods=['GET', 'POST'])
 def contact():
     if request.method == "POST":
         name = request.form.get('name')
