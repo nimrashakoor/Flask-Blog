@@ -57,4 +57,4 @@ def contact():
 
 @app.route('/health', methods=['GET'])
 def health():
-    return 200;
+    return "Health", 200;
