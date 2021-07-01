@@ -88,7 +88,7 @@ def register():
             return error, 418
 
     #TODO return a register page
-    return "Register Page not yet implemented", 501
+    return "Register Page", 501
 
 @app.route('/login', methods=('GET', 'POST'))
 def login():
@@ -108,9 +108,8 @@ def login():
             return "Login Successful", 200
         else:
             return error, 418
-    
-    #TODO return a login page
-    return "Login Page not yet implemented", 501
+            
+    return render_template('login', url=os.getenv("URL"))
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')

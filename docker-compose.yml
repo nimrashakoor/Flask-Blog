@@ -8,4 +8,5 @@ services:
     env_file:
       - .env
     volumes:
+      - "./app:/myportfolio/app"
       - ./flask.sqlite:/myportfolio/flask.sqlite

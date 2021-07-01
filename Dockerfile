@@ -5,6 +5,6 @@ COPY requirements.txt /myportfolio
 WORKDIR /myportfolio
 RUN pip3 install -r requirements.txt
 
-COPY . /myportfolio
+#COPY . /myportfolio
 
 CMD ["gunicorn", "wsgi:app", "-w 1", "-b 0.0.0.0:80"]
