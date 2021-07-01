@@ -1,9 +1,9 @@
 import os
 from flask import Flask, render_template, send_from_directory, request
 from dotenv import load_dotenv
-from . import db
+import db
 from werkzeug.security import generate_password_hash
-from app.db import get_db
+from db import get_db
 
 load_dotenv()
 app = Flask(__name__)
@@ -71,7 +71,7 @@ def register():
         password = request.form.get('password')
         db = get_db()
         error = None
-    
+
         if not username:
             error = 'Username is required.'
         elif not password:
@@ -80,15 +80,14 @@ def register():
             error = f"User {username} is already registered."
 
         if error is None:
-            db.execute('INSERT INTO user (username, password) VALUES (?, ?)', 
+            db.execute('INSERT INTO user (username, password) VALUES (?, ?)',
             (username, generate_password_hash(password)))
             db.commit()
             return f"User {username} created successfully"
         else:
             return error, 418
 
-    #TODO return a register page
-    return "Register Page", 501
+    return render_template('register.html', url=os.getenv("URL"))
 
 @app.route('/login', methods=('GET', 'POST'))
 def login():
@@ -108,8 +107,8 @@ def login():
             return "Login Successful", 200
         else:
             return error, 418
-            
-    return render_template('login', url=os.getenv("URL"))
+
+    return render_template('login.html', url=os.getenv("URL"))
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
